@@ -28,8 +28,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/sass-css-and-flexbox-UasxC9Ek8)
+- Live Site URL: [GitHub Pages](https://tabinka.github.io/ProfileCardComponent/index.html)
 
 ## My process
 
