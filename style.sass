@@ -1,3 +1,5 @@
+@import "variables.sass"
+    
 html 
     padding: 0
     margin: 0
@@ -8,9 +10,9 @@ body
     width: 100%
     font-family: "Kumbh Sans", sans-serif
     font-weight: 400
-    background: url("/images/bg-pattern-top.svg") no-repeat top, url("/images/bg-pattern-bottom.svg") no-repeat bottom, hsl(185, 75%, 39%)
+    background: url("/images/bg-pattern-top.svg") no-repeat top, url("/images/bg-pattern-bottom.svg") no-repeat bottom, $darkCyan
     background-size: 60%, 60%
-    background-position: -30% 50%, 130% -50%
+    background-position: -30% 300%, 130% -300%
     padding: 0
     margin: 0
 
@@ -24,25 +26,67 @@ body
 
 #card 
     background: white
-    border-radius: 10px
-    box-shadow: rgba(0,0,0,.3)
-    width: 450px
+    border-radius: 15px
+    box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.1)
+    -webkit-box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.1)
+    -moz-box-shadow: 0px 0px 26px 4px rgba(0,0,0,0.1)
+    width: 400px
     margin: auto
     .bottom
         display: flex
+        border-top: 1px solid lightgrey
         .stat
             margin: auto
+            padding: 25px 10px
             span
                 font-weight: 700
                 display: block
-                color: hsl(229, 23%, 23%)
+                color: $blue
                 text-align: center
             p
-                margin: 5px auto
+                margin-top: 5px
+                margin: auto
                 text-align: center
                 display: block
                 font-size: 10px
                 font-weight: lighter
                 letter-spacing: 1px
-                color: hsl(0, 0%, 59%)
+                color: $darkGray
+    .top
+        padding: 26% 5% 10% 5%
+        background: url("/images/bg-pattern-card.svg") no-repeat center top
+        background-size: 100%
+        border-radius: 15px
+        .photo
+            width: 100%
+            text-align: center
+            img
+                width: 100px
+                border: 5px solid white
+                border-radius: 50%
+        .info
+            .name
+                display: block
+                text-align: center
+                font-weight: 700
+                color: $blue
+                .age
+                    color: $darkGray
+                    font-weight: lighter
+            .city
+                display: block
+                text-align: center
+                color: $darkGray
+                font-size: 15px
 
+
+/* Responsive */
+
+@media screen and ( max-width: $phoneSize )
+    
+    body
+        background-size: contain, contain
+        background-position: -160px -30%, 160px 100%
+
+    #card
+        width: 90%
